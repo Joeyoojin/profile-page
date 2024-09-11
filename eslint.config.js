@@ -8,7 +8,7 @@ export default [
       'postcss.config.js',
       '.yarn',
     ],
-  }, 
+  },
   ...react({
     tsconfigRootDir: import.meta.dirname,
   }),
