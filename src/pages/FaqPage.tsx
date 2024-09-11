@@ -42,7 +42,7 @@ const FavPage: React.FC = () => {
           <div className="w-11/12 h-16 cursor-default bg-gray-200 rounded-lg text-[#5C5C5C] text-lg font-semibold font-PretendardRegular flex justify-center items-center">
             저에게 자주 여쭤보시는 질문들을 모아봤습니다!
           </div>
-          <div className="w-[90%] h-[480px] pb-8 m-4 overflow-y-scroll auto-rows-[90%] place-items-center gap-y-10">
+          <div className="w-[90%] h-[480px] pb-8 m-4 overflow-y-scroll  justify-center place-items-center gap-y-2">
             <FAQSection />
           </div>
         </div>

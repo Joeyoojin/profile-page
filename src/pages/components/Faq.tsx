@@ -24,7 +24,7 @@ export const FAQSection: React.FC = () => {
   ];
 
   return (
-    <div className="w-full h-full flex flex-col gap-[80px] ">
+    <div className="w-full h-full flex flex-col gap-[30px] justify-center items-center">
       {faqAccordionInfo.map((accordion) => (
         <FAQAccordion
           key={accordion.question}
@@ -40,11 +40,9 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="flex flex-col rounded-xl px-[50px] py-10 mobile:px-[20px] mobile:py-3 shadow-xl w-full gap-5 bg-yellow-100">
-      <div className="flex justify-between items-center gap-5">
-        <p className="text-xl font-bold truncate mobile:text-wrap mobile:text-left">
-          {question}
-        </p>
+    <div className="flex flex-col rounded-xl px-10 py-6 shadow-md w-5/6 gap-5 bg-yellow-100">
+      <div className="flex justify-between items-center gap-4">
+        <p className="text-lg mt-1 font-semibold truncate">{question}</p>
         <button
           className="rounded-full shadow-md transition border border-[#D3D3D3]"
           onClick={() => {
@@ -74,7 +72,7 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({ question, answer }) => {
           isOpen ? 'max-h-screen' : 'max-h-0'
         }`}
       >
-        <p className="text-lg w-full text-left mt-4">{answer}</p>
+        <p className="w-full text-left mt-4">{answer}</p>
       </div>
     </div>
   );
