@@ -3,7 +3,7 @@ import './../index.css';
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { FAQSection } from './Faq';
+import { FAQSection } from './components/Faq';
 
 const FavPage: React.FC = () => {
   const navigator = useNavigate();
