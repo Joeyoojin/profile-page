@@ -70,8 +70,13 @@ const IntroPage: React.FC = () => {
 
             {/* 하얀색 하단 영역 */}
             <div className="w-full h-1/3 absolute bottom-0 bg-white rounded-b-2xl border border-[#acabc2] flex justify-center items-center gap-2">
-              <div className="flex flex-col justify-center items-center text-black text-xl font-extrabold">
-                <div>조유진</div>
+              <div className="flex flex-col">
+                <div className="flex flex-col justify-center items-center text-black text-2xl font-bold">
+                  <div>조유진</div>
+                </div>
+                <div className="flex flex-col justify-center items-center text-black text-lg font-medium">
+                  <div>인스타그램: @jjojjo0726 / 깃허브: Joeyoojin</div>
+                </div>
               </div>
             </div>
           </div>
