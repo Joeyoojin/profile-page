@@ -21,7 +21,7 @@ const FavPage: React.FC = () => {
                 navigator('/');
               }}
             >
-              프로필
+              프로피일
             </div>
           </div>
 
