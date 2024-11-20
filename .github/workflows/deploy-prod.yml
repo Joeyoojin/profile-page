@@ -28,5 +28,5 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY_PROD }}
           AWS_REGION: us-west-1
         run: |
-          aws s3 sync ./dist s3://wafflestudio-seminar-2024-frontend-uzin-prod --delete 
-          aws cloudfront create-invalidation --distribution-id EGTKG2J0O5BRS --paths "/*"
+          aws s3 sync ./dist s3://wafflestudio-uzin-prod --delete
+          aws cloudfront create-invalidation --distribution-id E31LNGGCHNJDRI --paths "/*"
